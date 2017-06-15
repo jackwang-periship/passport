@@ -1,0 +1,351 @@
+{% extends 'base.html' %}
+
+{% block content_header %}Welcome Back!{% endblock %}
+
+{% block title %}Student{% endblock %}
+
+{% block sidebar %}
+<ul class="sidebar-menu">
+  <li class="header">MENU</li>
+  <!-- Optionally, you can add icons to the links -->
+  <li class="active"><a href="#"><i class="fa fa-link"></i> <span>HOME</span></a></li>
+  <li><a href="/students/add_student/"><i class="fa fa-link"></i> <span>Add Student</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Search Student</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Current Student</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>All My Student</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Public Student</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Salse Reports</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Switch Counselor</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Source Admin</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Super Tool</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Password</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Help & Settings</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Sign Out</span></a></li>
+</ul>
+{% endblock %}
+
+{% block main_content %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="box" style="overflow: auto;">
+      <div class="box-header with-border">
+        <h3 class="box-title">Top 10 Current Students</h3>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <table class="table table-bordered">
+          <tbody><tr>
+            <th>RecID</th>
+            <th>Name</th>
+            <th>Home Phone</th>
+            <th>Email</th>
+            <th>Entry Date</th>
+            <th>Manage</th>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>39148</td>
+            <td>Jayan M.</td>
+            <td>908-760-6602</td>
+            <td>jmathewjoseph@gmail.com</td>
+            <td>05/23/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47902</td>
+            <td>gauray c</td>
+            <td></td>
+            <td></td>
+            <td>05/18/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>39148</td>
+            <td>Jayan M.</td>
+            <td>908-760-6602</td>
+            <td>jmathewjoseph@gmail.com</td>
+            <td>05/23/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47902</td>
+            <td>gauray c</td>
+            <td></td>
+            <td></td>
+            <td>05/18/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+        </tbody></table>
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer clearfix">
+        <a href="#">More Current Student >>></a>
+      </div>
+    </div>
+
+    <div class="box" style="overflow: auto;">
+      <div class="box-header with-border">
+        <h3 class="box-title">Top 10 All My Students</h3>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <table class="table table-bordered">
+          <tbody><tr>
+            <th>RecID</th>
+            <th>Name</th>
+            <th>Home Phone</th>
+            <th>Email</th>
+            <th>Entry Date</th>
+            <th>Manage</th>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>39148</td>
+            <td>Jayan M.</td>
+            <td>908-760-6602</td>
+            <td>jmathewjoseph@gmail.com</td>
+            <td>05/23/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47902</td>
+            <td>gauray c</td>
+            <td></td>
+            <td></td>
+            <td>05/18/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>39148</td>
+            <td>Jayan M.</td>
+            <td>908-760-6602</td>
+            <td>jmathewjoseph@gmail.com</td>
+            <td>05/23/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47902</td>
+            <td>gauray c</td>
+            <td></td>
+            <td></td>
+            <td>05/18/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+        </tbody></table>
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer clearfix">
+        <a href="#">All My Students >>></a>
+      </div>
+    </div>
+
+    <div class="box" style="overflow: auto;">
+      <div class="box-header with-border">
+        <h3 class="box-title">Top 10 Public Students</h3>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <table class="table table-bordered">
+          <tbody><tr>
+            <th>RecID</th>
+            <th>Name</th>
+            <th>Home Phone</th>
+            <th>Email</th>
+            <th>Counselor</th>
+            <th>Entry Date</th>
+            <th>Manage</th>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>Yuan Pan</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>Yuan Pan</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>39148</td>
+            <td>Jayan M.</td>
+            <td>908-760-6602</td>
+            <td>jmathewjoseph@gmail.com</td>
+            <td>Yuan Pan</td>
+            <td>05/23/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47902</td>
+            <td>gauray c</td>
+            <td></td>
+            <td></td>
+            <td>Yuan Pan</td>
+            <td>05/18/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>Yuan Pan</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>Yuan Pan</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>39148</td>
+            <td>Jayan M.</td>
+            <td>908-760-6602</td>
+            <td>jmathewjoseph@gmail.com</td>
+            <td>Yuan Pan</td>
+            <td>05/23/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47902</td>
+            <td>gauray c</td>
+            <td></td>
+            <td></td>
+            <td>Yuan Pan</td>
+            <td>05/18/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47913</td>
+            <td>gauray c</td>
+            <td>347-574-3949</td>
+            <td>gcjob1@gmail.com</td>
+            <td>Yuan Pan</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+          <tr>
+            <td>47912</td>
+            <td>Anurag kulkani</td>
+            <td>732-762-4413</td>
+            <td>anuragkulrni12@gmail.com</td>
+            <td>Yuan Pan</td>
+            <td>05/20/2017</td>
+            <td>Bacis|Course|Corp|Req|F&R</td>
+          </tr>
+        </tbody></table>
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer clearfix">
+        <a href="#">All Public Students >>></a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

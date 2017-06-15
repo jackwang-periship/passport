@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load countries %}
+
+{% block content_header %}Welcome Back!{% endblock %}
+
+{% block title %}Add Student{% endblock %}
+
+{% block sidebar %}
+<ul class="sidebar-menu">
+  <li class="header">MENU</li>
+  <!-- Optionally, you can add icons to the links -->
+  <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Step 1</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Step 2</span></a></li>
+  <li><a href="#"><i class="fa fa-link"></i> <span>Step 3</span></a></li>
+</ul>
+{% endblock %}
+
+{% block main_content %}
+<h1>Add a student</h1>
+<div>
+	<form id="student_form" method="post" action="/students/add_student/">
+		{% csrf_token %}
+		<div class="row">
+			{% for field in form %}
+			<div class="col-gl-4 col-md-4">
+				<div class="form-group">
+					{{ field.errors }}
+			        {{ field.label_tag }}
+			        {{ field.help_text }}
+			        {{ field }}
+			        <script></script>
+		        </div>
+	        </div>
+			{% endfor %}
+		</div>
+		
+
+		<!-- {% for hidden in form.hidden_fields %}
+			{{ hidden }}
+		{% endfor %}
+		{% for field in form.visible_fields %}
+			{{ field.errors }}
+			{{ field.help_text }}
+			{{ field }}
+			<br>
+		{% endfor %} -->
+		<button type="submit" name="submit" class="btn">Create a student</button>
+	</form>
+</div>
+{% endblock %}
